@@ -1,14 +1,15 @@
 const menu = `
 <nav>
+
 <ul class="nav justify-content-end">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#project">Projects</a>
+    <a class="nav-link" href="#my-projects">Projects</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="#about">About</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Contact</a>
@@ -20,12 +21,8 @@ const menu = `
 </nav>
 `;
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('menu').innerHTML = menu;
-  });
-  
-  
-  
-  
-  
-  
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("menu").innerHTML = menu;
+});
+
+

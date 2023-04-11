@@ -20,6 +20,7 @@ nav,ul, li{
   color:white
 }
 
+
 #imagen img{
   width: 80%;
  
@@ -56,39 +57,61 @@ a .fa-brands{
 
 .texto{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: #fff;
-  padding: 20px;
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+.texto p{
+  width: 25ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: white; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 25ch; 
+  }
+}
+
+ul{
   text-align: left;
-}
-
-.nombre{
-  overflow: hidden; /* Oculta el contenido del elemento */
-  border-right: 3px solid orange; /* Crea el efecto de línea de escritura */
-  white-space: nowrap;
-  margin: 0; /* Elimina el margen por defecto */
-  letter-spacing: 0.15em; /* Ajusta el espacio entre letras */
-  animation: typing 3s steps(30), cursor .75s step-end infinite alternate; /* Crea la animación */
-}
-/* Define la animación de escritura */
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-/* Define la animación del cursor que parpadea */
-@keyframes cursor{
-  50% {
-    border-color:transparent;
-  }
+  list-style: none;
+  
 }
 
 hr{
-  margin: 5%;
-  size:10;
+  margin: 50px;
+}
+
+
+#proyectos{
+  background-color: #7B620A;
+  border-radius: 20px;
+  width: 60%;
+}
+
+
+.card{
+  width: 50px;
 }
