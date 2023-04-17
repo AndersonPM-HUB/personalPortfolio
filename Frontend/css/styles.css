@@ -16,6 +16,11 @@ nav,ul, li{
   font-size: 20px;  
 }
 
+.nav-link:hover{
+  color:#D99F09;
+  box-shadow: #feffff;
+}
+
 .nav-link{
   color:white
 }
@@ -40,19 +45,33 @@ section{
   margin-left: 70px;
 }
 
+a i:hover{
+  color: #D99F09;
+  box-shadow:  0 0 50px 25px #0db2f3;
+}
+
 a .fa-brands{
   color: white;
+  margin-left: 20px;
 }
 
 #consola{
-  width: 400px;
+  width: 500px;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+#consola:hover{
+  box-shadow:  0 0 50px 25px #0db2f3;
 }
 
 .imagen-container {
   position: relative;
   display: inline-block;
+}
+
+h3{
+  text-align: left;
 }
 
 .texto{
@@ -77,7 +96,6 @@ a .fa-brands{
 	animation: cursor 1s step-start infinite, 
     text 5s steps(18) alternate infinite;
 }
-
 
 @keyframes cursor {
 	0%, 100% { 
@@ -105,13 +123,47 @@ hr{
 }
 
 
-#proyectos{
-  background-color: #7B620A;
-  border-radius: 20px;
-  width: 60%;
-}
-
 
 .card{
   width: 50px;
+  margin: 2px;
+}
+
+#card-container{
+  background-color: #7B620A;
+  padding: 15px;
+  border-radius: 20px;
+}
+h3:hover {
+  animation: 1s chicle 1;
+}
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes chicle {
+  30% {
+    transform: scaleX(1.2) scaleY(0.7);
+  }
+  40% {
+    transform: scaleX(0.7) scaleY(1.2);
+  }
+   60% { 
+    transform: scaleX(1.1) scaleY(0.8); 
+  }
+  
+}
+
+
+input, textarea{
+  background-color: beige;
+  width: 50%;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-flexbox;
+}
+
+#form-contact{
+  border-radius: 20px;
+  border-color: beige;
+  margin: 20px;
 }

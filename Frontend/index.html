@@ -41,42 +41,47 @@
 
     <div class="contenido">
       <section id="descripcion">
-       
         <div class="imagen-container">
           <img id="consola" src="media/consola.png" alt="consola" >
           <div class="texto">
             <p>Hello,I'm Anderson</p>
           </div>
         </div>
-
         <p>Programmer, Design, Frontend, <br />Backend, Data analytics</p>
         <div id="redes">
-          <i class="fa-brands fa-instagram  fa-2xl"></i>
-          <a href="https://github.com/AndersonPM-HUB" target="_blank" ><i class="fa-brands fa-github fa-2xl" style="color: #fcfcfd;"></i></a>
+          <a><i class="fa-brands fa-instagram  fa-2xl"></i></a>
+          <a href="https://github.com/AndersonPM-HUB" target="_blank" ><i class="fa-brands fa-github fa-2xl"></i></a>
           <a href="https://www.linkedin.com/in/anderson-arbey-pedroza-mogollón-782073215/" target="_blank" ><i class="fa-brands fa-linkedin  fa-2xl "></i></a>
         </div>
       </section>
       <section id="imagen">
-        <img src="media/Porgrammer1.png" alt="programmer" />
+        <img src="media/Porgrammer1.png" alt="programmer" style="width: 100%;"/>
       </section>
     </div>
-    <br>
+
     <hr>
 
-    <div class="contenido2 text-center m-3" id="about">
+    <div class="contenido2 text-center mt-5" id="about">
         <h2 class="m-5">About me:</h2>
-        <div class="container text-center">
+        <div class="container ">
           <div class="row">
             <div class="col">
-             <h3>Education:</h3>
+             <h3 >Education:</h3>
              <ul >
               <li>Tecnico en sistemas-SENA</li>
               <li>Ingeniero de sistemas-UNIMINUTO</li>
               <li>Diplomado en programacion web-UTP</li>
              </ul>
+              <br>
+              <br>
+              <br>
+             <h3>Work experience:</h3>
+             <ul >
+              <li>Analista y desarrollador -ANE</li>
+             </ul>
             </div>
             <div class="col">
-              <img src="media/programmer2.png" alt="programmer" width="60%">
+              <img src="media/programmer2.png" alt="programmer" width="70%" >
             </div>
           </div>
 
@@ -91,7 +96,7 @@
             </div>
             <div class="col">
               <h3>Skills:</h3>
-             <ul >
+              <ul>
               <li>Ingles B1</li>
               <li>Comunicacion Asertiva</li>
               <li>Trabajo en equipo</li> 
@@ -101,65 +106,65 @@
           </div>
         </div>
     </div>
+
     <hr>
     
-    <div class="contenido3 text-center">
-      <h2>Projects</h2>
-      <seccion class="proyectos" id="my-projects">
-
-        <div class="container text-center ">
-
-          <div class="row">
-            <div class="col-10 p-5" id="proyectos">
-              <div class="container text-center ">
-                <div class="row">
-                  <div class="col">
-                    <div class="card" style="width: 9rem;">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h6 class="card-title">SISTEMA DE GESTION DE CALIFICACIONES PARA UN JARDIN INFANTIL</h6>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 9rem;">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h6 class="card-title">APLICACION PARA EL DIAGNOSTICO Y TRATAMIENTO DE ENFERMEDADES GENERALES</h6>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 9rem;">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h6 class="card-title">ECOMMERCE - FERRETERIA</h6>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-
-
-            <div class="col-2 text-center">
-             <p>All my projects in my github</p>
-             <img src="media/programmer3.png" alt="programmer" >
-            </div>
+    <div class="contenido3 text-center" id="my-projects">
+      <h2 class="m-5">Projects</h2>
+      
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-8">
+              <div class="row" id="card-container"></div>
           </div>
 
+          <div class="col-3">  
+              <p>All my projects in my github</p>
+              <img src="media/programmer3.png" alt="programmer" >
+            
+          </div>
         </div>
-        
-
-      </seccion>
-    
+      </div>
     </div>
+
+    <hr>
+
+    <div class="contenido4 text-center" id="contact">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-8 bg-black border border-white " id="form-contact">
+            <h2 class="m-5">Contact me!!</h2>
+            <form action="" method="post">
+
+              
+              <label for="name">NAME: </label>
+              <input id="name" type="text" >
+              <br>
+              <label for="email">EMAIL: </label>
+              <input id="email" type="email" >
+              <br>
+              <label for="comment">COMMENT: </label>
+              <textarea  id="comment" ></textarea>
+              <br>
+              <button type="button" class="btn btn-warning p-3">SEND</button>
+            </form>
+              
+          </div>
+
+          <div class="col-3">  
+              <p>All my projects in my github</p>
+              <img src="media/programmer3.png" alt="programmer" >
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/cards.js"> </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
