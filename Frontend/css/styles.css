@@ -26,19 +26,11 @@ nav,ul, li{
 }
 
 
-#imagen img{
-  width: 80%;
- 
-}
 .contenido{
   text-align: center;
-  display: flex;
   margin: auto;
 }
-section{
-  display: inline-block;
-  margin:30px 5px 0px 5px;
-}
+
 
 #descripcion{
   width: 40%;
@@ -133,6 +125,10 @@ hr{
   background-color: #7B620A;
   padding: 15px;
   border-radius: 20px;
+  
+}
+#card-container:hover{
+  box-shadow:  0 0 50px 25px #0db2f3;
 }
 h3:hover {
   animation: 1s chicle 1;
@@ -166,4 +162,9 @@ input, textarea{
   border-radius: 20px;
   border-color: beige;
   margin: 20px;
+  
+}
+
+#form-contact:hover{
+  box-shadow:  0 0 50px 25px #0db2f3;
 }
